@@ -3,570 +3,269 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FERROSS · Materiales eléctricos en Morón · Yrigoyen 1064</title>
-<meta name="description" content="Materiales eléctricos FERROSS en Av. Hipólito Yrigoyen 1064, Morón. Cables, tableros, llaves, tomas e iluminación. 5,0 en Google. Llamá al 011 4645-0498 y preguntá si lo tenemos.">
+<title>FERROSS · Materiales eléctricos en Morón</title>
+<meta name="description" content="Casa de materiales eléctricos en Av. Hipólito Yrigoyen 1064, Morón. Cables, térmicas, disyuntores, iluminación y accesorios. 5,0 en Google. Tel. 011 4645-0498.">
 <!-- Demo para mostrarle al dueño: no se indexa hasta que la contrate. -->
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#16181d">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%2316181d'/%3E%3Cpath d='M13.4 2.6 5.2 13.4h6L9.8 21.4l9.4-11.2h-6.6z' fill='%23ffd21e'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0f2949">
+<link rel="icon" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-/* Paleta del local: el celeste del frente y de las rejas, el blanco del cartel
-   y el amarillo de la electricidad sobre gris de tablero. */
+/* Paleta pipeteada del cartel y del frente de FERROSS
+   (foto propia del local + Street View de enero 2026, con el cartel nuevo).
+   celeste  #4fb6f2 = el fondo del cartel nuevo
+   azul     #1b4b8f = las letras "MATERIALES ELECTRICOS"
+   azul-frente #2e5476 = la pintura de columnas y marcos de la vidriera   */
 :root{
-  --grafito:#16181d; --grafito-2:#1f232b; --grafito-3:#2b303a; --linea-osc:#353b47;
-  --amarillo:#ffd21e; --amarillo-2:#e0b400; --amarillo-claro:#fff6d0;
-  --celeste:#2ea3c4; --celeste-2:#1c7d99; --celeste-claro:#e3f4f8;
-  --papel:#ffffff; --hueso:#f7f7f4; --tinta:#191c22; --gris:#5d6470; --linea:#e2e2dc;
-  --rojo:#d1352c; --verde-ok:#13805a;
-  --wa:#25d366;
-  --display:'Oswald',system-ui,sans-serif; --texto:'IBM Plex Sans',system-ui,sans-serif;
-  --r:12px;
+  --celeste:#4fb6f2; --celeste-2:#9ddcfb; --celeste-3:#e4f5ff;
+  --azul:#1b4b8f; --azul-2:#123a73; --azul-noche:#0f2949; --frente:#2e5476;
+  --blanco:#ffffff; --hueso:#f2f8fd; --gris:#5d7089; --gris-2:#8ea3ba;
+  --linea:#cfe4f4; --wa:#25d366;
+  --tit:'Archivo',Impact,sans-serif; --txt:'Barlow',system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;overflow-x:hidden}
-body{background:var(--hueso);color:var(--tinta);font-family:var(--texto);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{max-width:100%;height:auto;display:block}
+html{scroll-behavior:smooth}
+body{background:var(--blanco);color:#12283f;font-family:var(--txt);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block;height:auto}
 a{color:inherit}
-svg{display:block}
-.contenedor{width:min(1140px,100% - 32px);margin-inline:auto}
-h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.05;text-transform:uppercase;letter-spacing:.005em;color:var(--grafito)}
-h2{font-size:clamp(30px,4.8vw,48px)}
-h3{font-size:20px;font-weight:500}
-.etiqueta{display:inline-flex;align-items:center;gap:9px;font-family:var(--display);font-weight:500;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--celeste-2);margin-bottom:12px}
-.etiqueta::before{content:'';width:9px;height:9px;background:var(--amarillo);transform:rotate(45deg);box-shadow:0 0 0 2px var(--grafito)}
-.lead{color:var(--gris);font-size:18px;max-width:540px}
-section{padding:76px 0}
+.c{width:min(1060px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:var(--tit);font-weight:800;text-transform:uppercase;line-height:1.03;letter-spacing:-.015em}
+h2{font-size:clamp(26px,6.2vw,38px);color:var(--azul)}
+.ojo{font-family:var(--tit);font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-size:12px;margin-bottom:9px;color:var(--celeste)}
+section{padding:34px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--tit);font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:16px;padding:15px 24px;text-decoration:none;border:2px solid transparent;cursor:pointer;border-radius:6px}
+.btn:active{transform:scale(.98)}
+.az{background:var(--azul);color:#fff}
+.wa{background:var(--wa);color:#06260f}
+.bd{border-color:#ffffff66;color:#fff}
+.bd-az{border-color:var(--azul);color:var(--azul)}
 
-/* botones */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--display);font-weight:500;font-size:17px;letter-spacing:.04em;text-transform:uppercase;padding:15px 24px;border-radius:8px;text-decoration:none;border:2px solid var(--grafito);cursor:pointer;transition:transform .14s,box-shadow .14s,background .14s;line-height:1.1}
-.btn svg{width:20px;height:20px;flex:none}
-.btn-amarillo{background:var(--amarillo);color:var(--grafito);box-shadow:4px 4px 0 var(--grafito)}
-.btn-amarillo:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--grafito)}
-.btn-amarillo:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--grafito)}
-.btn-celeste{background:var(--celeste);color:#fff}
-.btn-celeste:hover{background:var(--celeste-2)}
-.btn-wa{background:var(--wa);color:#06290f}
-.btn-wa:hover{background:#34e077}
-.btn-borde{background:var(--papel);color:var(--grafito)}
-.btn-borde:hover{background:var(--celeste-claro)}
-.btn-chico{padding:9px 14px;font-size:15px;border-width:1.5px;box-shadow:none}
-.botones{display:flex;flex-wrap:wrap;gap:13px}
+/* rayas del logotipo, usadas como separador */
+.rayas{height:14px;background:repeating-linear-gradient(0deg,var(--celeste) 0 3px,var(--blanco) 3px 6px)}
+.rayas.osc{background:repeating-linear-gradient(0deg,var(--celeste) 0 3px,var(--azul-noche) 3px 6px)}
 
-/* cartel de arriba */
-.cartel{position:sticky;top:0;z-index:40;background:var(--grafito);border-bottom:4px solid var(--amarillo)}
-.cartel .contenedor{display:flex;align-items:center;justify-content:space-between;height:66px;gap:14px}
-.marca{display:flex;align-items:center;gap:11px;text-decoration:none;color:#fff}
-.marca .rayo{width:36px;height:36px;border-radius:9px;background:var(--amarillo);display:grid;place-items:center;flex:none}
-.marca .rayo svg{width:21px;height:21px;color:var(--grafito)}
-.marca b{font-family:var(--display);font-weight:700;font-size:22px;letter-spacing:.12em;line-height:1;display:block}
-.marca small{display:block;font-size:10.5px;color:#9aa3b2;letter-spacing:.2em;text-transform:uppercase;margin-top:3px}
-.cartel-der{display:flex;align-items:center;gap:11px}
-.cartel-tel{display:flex;align-items:center;gap:8px;text-decoration:none;font-family:var(--display);font-weight:500;font-size:17px;letter-spacing:.03em;color:var(--grafito);background:var(--amarillo);border-radius:8px;padding:9px 15px}
-.cartel-tel svg{width:17px;height:17px}
+/* ---------- portada ---------- */
+header{background:linear-gradient(170deg,var(--celeste) 0%,#2b93d6 60%,var(--azul) 100%);color:#fff;padding-bottom:28px}
+.logoCard{display:inline-block;background:#fff;padding:12px 18px;border-radius:8px;margin:16px 0 18px;box-shadow:0 10px 28px #0a2a4d30}
+.logoCard img{width:min(268px,62vw)}
+header h1{font-size:clamp(29px,7.6vw,50px);margin-bottom:12px;text-shadow:0 2px 0 #0b3c6c40}
+header p.baja{font-size:18px;max-width:32em;color:#eaf7ff;margin-bottom:20px}
+.acciones{display:flex;flex-wrap:wrap;gap:10px}
+.medallon{display:inline-flex;align-items:center;gap:11px;background:#ffffff1f;border:1px solid #ffffff4d;padding:10px 15px;border-radius:8px;margin-bottom:20px}
+.medallon b{font-family:var(--tit);font-size:24px;line-height:1}
+.medallon span{font-size:14px;line-height:1.3;color:#e6f5ff}
 
-/* portada */
-.portada{position:relative;overflow:hidden;padding:52px 0 66px;
-  background:
-    linear-gradient(180deg,#0000 0 60%, var(--hueso) 60%),
-    repeating-linear-gradient(90deg,#ffffff0a 0 1px,transparent 1px 34px),
-    repeating-linear-gradient(0deg,#ffffff0a 0 1px,transparent 1px 34px),
-    var(--grafito)}
-.portada .contenedor{display:grid;grid-template-columns:1.08fr .92fr;gap:46px;align-items:start}
-.portada h1{font-size:clamp(36px,5.8vw,62px);color:#fff;font-weight:600}
-.portada h1 .resalta{color:var(--amarillo)}
-.portada .bajada{color:#b7bfcc;font-size:clamp(17px,2vw,19.5px);margin:20px 0 26px;max-width:520px}
-.portada .bajada b{color:#fff;font-weight:600}
-.estado{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:8px 17px 8px 12px;font-weight:500;font-size:15.5px;background:#ffffff12;border:1px solid #ffffff2b;color:#dfe4ec;margin-bottom:22px}
-.estado .punto{width:11px;height:11px;border-radius:50%;background:#7a8394;flex:none}
-.estado.abierto .punto{background:#2ee08a;animation:late 1.9s infinite}
-.estado.cerrado .punto{background:#ff6b5e}
-.estado b{font-weight:700}
-.estado.abierto b{color:#2ee08a}
-.estado.cerrado b{color:#ff8b80}
-@keyframes late{0%{box-shadow:0 0 0 0 #2ee08a80}70%{box-shadow:0 0 0 9px #2ee08a00}100%{box-shadow:0 0 0 0 #2ee08a00}}
-.foto-local{position:relative;width:min(400px,100%);justify-self:center}
-.foto-local .marco{border:4px solid var(--amarillo);border-radius:14px;overflow:hidden;background:var(--papel);box-shadow:0 26px 50px -26px #000c}
-.foto-local img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 30%}
-.foto-local figcaption{padding:12px 15px;font-size:14px;color:var(--gris);background:var(--papel);border-top:2px solid var(--grafito)}
-.foto-local figcaption b{color:var(--grafito)}
-.colgante{position:absolute;left:-22px;top:26px;background:var(--celeste);color:#fff;border:2.5px solid var(--grafito);border-radius:8px 20px 20px 8px;padding:11px 16px 11px 28px;transform:rotate(-5deg);box-shadow:4px 4px 0 var(--grafito);font-family:var(--display);font-weight:500;line-height:1.15;z-index:2}
-.colgante::before{content:'';position:absolute;left:9px;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;background:var(--hueso);border:2px solid var(--grafito)}
-.colgante small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.9}
-.colgante span{font-size:21px;letter-spacing:.02em}
+/* aviso del mediodía */
+.aviso{background:var(--azul-noche);color:#dff0ff;padding:16px 0}
+.aviso .c{display:flex;gap:12px;align-items:flex-start;font-size:15.5px}
+.aviso b{color:var(--celeste-2);font-family:var(--tit);text-transform:uppercase;letter-spacing:.04em}
 
-/* tira */
-.tira{background:var(--amarillo);border-bottom:3px solid var(--grafito)}
-.tira ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr)}
-.tira li{padding:18px 16px;border-right:2px solid #0000001f;display:flex;flex-direction:column;gap:1px}
-.tira li:last-child{border-right:0}
-.tira strong{font-family:var(--display);font-weight:600;font-size:23px;color:var(--grafito);line-height:1.1}
-.tira span{font-size:13.5px;color:#4d4415}
-.tira a{text-decoration:none;display:flex;flex-direction:column;gap:1px}
+/* ---------- lo que hay en el cartel ---------- */
+.rubros{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--linea);border:1px solid var(--linea);border-radius:8px;overflow:hidden;margin-top:20px}
+@media(min-width:720px){.rubros{grid-template-columns:repeat(3,1fr)}}
+.rubros li{list-style:none;background:#fff;padding:16px 15px}
+.rubros li b{display:block;font-family:var(--tit);font-weight:700;text-transform:uppercase;font-size:15.5px;color:var(--azul);letter-spacing:-.01em}
+.rubros li span{font-size:14px;color:var(--gris);display:block;margin-top:3px}
+figure.cartel{margin-top:18px;border-radius:8px;overflow:hidden;border:1px solid var(--linea)}
+figcaption{font-size:13.5px;color:var(--gris);padding:10px 14px;background:var(--celeste-3)}
 
-/* ¿lo tenés? */
-.busco{background:var(--celeste-claro);border-bottom:1px solid var(--linea)}
-.busco .contenedor{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:start}
-.busco .lead{color:#123c49;margin-top:14px}
-.consejos{list-style:none;margin-top:24px;display:grid;gap:11px}
-.consejos li{display:flex;gap:12px;align-items:flex-start;background:#ffffff8c;border:1px solid #2ea3c44d;border-radius:10px;padding:13px 15px;color:#123c49;font-size:15.5px}
-.consejos b.n{flex:none;width:27px;height:27px;border-radius:7px;background:var(--grafito);color:var(--amarillo);display:grid;place-items:center;font-family:var(--display);font-size:15px}
-.panel{background:var(--papel);border:3px solid var(--grafito);border-radius:16px;padding:24px;display:grid;gap:14px;box-shadow:8px 8px 0 var(--celeste)}
-.panel label{display:grid;gap:6px;font-family:var(--display);font-size:14.5px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--grafito)}
-.panel input{width:100%;background:var(--hueso);border:2px solid var(--linea);border-radius:9px;padding:13px 14px;font:inherit;font-size:16px;color:var(--tinta)}
-.panel input:focus{outline:none;border-color:var(--celeste);background:#fff}
-.fila2{display:grid;grid-template-columns:1.3fr .7fr;gap:12px;align-items:end}
-.opc{font-weight:400;text-transform:none;letter-spacing:0;color:var(--gris);font-family:var(--texto);font-size:13px}
-.rapidos{display:flex;flex-wrap:wrap;gap:6px;margin-top:-2px}
-.rapidos button{font:inherit;font-size:13px;font-weight:500;border:1.5px solid var(--linea);background:var(--papel);color:var(--gris);padding:6px 11px;border-radius:999px;cursor:pointer}
-.rapidos button:hover{border-color:var(--celeste-2);color:var(--celeste-2)}
-.ticket{background:var(--amarillo-claro);border:1.5px dashed var(--amarillo-2);border-radius:9px;padding:14px 16px;font-size:15px;min-height:76px;line-height:1.5}
-.ticket small{display:block;font-family:var(--display);font-size:11.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#7d6608;margin-bottom:4px}
-.acciones{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.acciones .btn{width:100%;padding:14px 10px;font-size:16px}
-.copiar{justify-self:center;background:none;border:0;font:inherit;font-size:14px;font-weight:600;color:var(--celeste-2);text-decoration:underline;cursor:pointer}
-.panel .nota{font-size:13px;color:var(--gris);text-align:center}
+/* ---------- dos públicos ---------- */
+.dos{display:grid;gap:14px;margin-top:20px}
+@media(min-width:760px){.dos{grid-template-columns:1fr 1fr}}
+.caja{border:1px solid var(--linea);border-radius:10px;padding:20px;background:#fff}
+.caja.azul{background:var(--azul);color:#fff;border-color:var(--azul)}
+.caja h3{font-size:19px;margin-bottom:8px}
+.caja.azul h3{color:var(--celeste-2)}
+.caja p{font-size:15.5px}
+.caja.azul p{color:#dceeff}
+.caja ul{margin:10px 0 0 18px;font-size:15px}
+.caja li{margin-bottom:3px}
 
-/* rubros */
-.rubros-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:30px}
-.rubros-head p{color:var(--gris);max-width:420px}
-.grilla{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
-.rubro{display:flex;gap:15px;align-items:center;text-align:left;background:var(--papel);border:2px solid var(--linea);border-radius:var(--r);padding:17px;cursor:pointer;font:inherit;color:inherit;transition:border-color .15s,transform .15s,box-shadow .15s;width:100%}
-.rubro:hover{border-color:var(--grafito);transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--amarillo)}
-.rubro .ic{flex:none;width:50px;height:50px;border-radius:11px;background:var(--grafito);color:var(--amarillo);display:grid;place-items:center}
-.rubro .ic svg{width:26px;height:26px}
-.rubro h3{margin-bottom:2px}
-.rubro span{font-size:14px;color:var(--gris);display:block}
+/* ---------- opiniones ---------- */
+.ops{display:grid;gap:13px;margin-top:20px}
+@media(min-width:760px){.ops{grid-template-columns:repeat(3,1fr)}}
+.op{background:var(--celeste-3);border:1px solid var(--linea);border-radius:10px;padding:17px}
+.op .est{color:#f3a712;letter-spacing:2px;font-size:14px;margin-bottom:6px}
+.op p{font-size:15.5px}
+.op .q{font-size:13px;color:var(--gris);margin-top:9px}
 
-/* dos públicos */
-.dos{background:var(--grafito);color:#fff}
-.dos h2{color:#fff}
-.dos .etiqueta{color:var(--amarillo)}
-.dos .par{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
-.caja-p{background:var(--grafito-2);border:1px solid var(--linea-osc);border-radius:16px;padding:28px 26px}
-.caja-p.pro{border-color:var(--amarillo)}
-.caja-p h3{color:#fff;font-size:24px;font-weight:600;margin-bottom:10px}
-.caja-p>p{color:#aab2c0;font-size:15.5px}
-.caja-p ul{list-style:none;margin-top:18px;display:grid;gap:9px}
-.caja-p li{display:flex;gap:10px;align-items:flex-start;font-size:15.5px;color:#e4e8ef}
-.caja-p li::before{content:'';flex:none;width:18px;height:18px;margin-top:3px;border-radius:5px;background:var(--amarillo) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2316181d' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L19 7'/%3E%3C/svg%3E") center/12px no-repeat}
-.caja-p .btn{margin-top:22px}
-.dos .firma{margin-top:30px;display:flex;gap:14px;align-items:center;color:#aab2c0;font-size:15.5px;flex-wrap:wrap}
-.dos .firma b{color:var(--amarillo)}
+/* ---------- pagos ---------- */
+.pagos{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pagos span{font-family:var(--tit);font-weight:600;text-transform:uppercase;font-size:13px;letter-spacing:.06em;border:1.5px solid var(--linea);color:var(--azul);padding:8px 13px;border-radius:6px;background:#fff}
 
-/* horarios */
-.horarios .contenedor{display:grid;grid-template-columns:.8fr 1.2fr;gap:46px;align-items:start}
-.horarios p.lead{margin-top:14px}
-.aviso{margin-top:22px;background:var(--amarillo-claro);border:2px dashed var(--grafito);border-radius:12px;padding:15px 18px;font-size:15px}
-.aviso b{color:var(--grafito)}
-.tabla{background:var(--papel);border:2px solid var(--grafito);border-radius:var(--r);overflow:hidden;box-shadow:6px 6px 0 var(--celeste)}
-.escala{display:grid;grid-template-columns:104px 1fr 132px;gap:14px;padding:10px 18px 11px;background:#f1f0ea;font-size:12px;color:var(--gris);border-bottom:1px solid var(--linea)}
-.escala div{display:flex;justify-content:space-between;margin:0 -4px}
-.escala div span{width:10px;text-align:center}
-.fila{display:grid;grid-template-columns:104px 1fr 132px;align-items:center;gap:14px;padding:13px 18px;border-bottom:1px solid var(--linea)}
-.fila:last-child{border-bottom:0}
-.fila .dia{font-family:var(--display);font-weight:500;font-size:16px;letter-spacing:.04em;text-transform:uppercase}
-.fila .hs{font-weight:600;text-align:right;font-size:14.5px;font-variant-numeric:tabular-nums}
-.fila.hoy{background:var(--celeste-claro)}
-.fila.hoy .dia::after{content:'HOY';margin-left:7px;font-size:10px;letter-spacing:.1em;background:var(--grafito);color:var(--amarillo);padding:2px 5px;border-radius:4px;vertical-align:2px;font-family:var(--texto);font-weight:700}
-.fila.cerrado-dia .hs{color:var(--gris);font-weight:500}
-.pista{position:relative;height:13px;border-radius:4px;background:#eceade}
-.pista i{position:absolute;top:0;bottom:0;border-radius:4px;background:var(--celeste)}
-.fila.hoy .pista i{background:var(--grafito)}
-.pista b.ahora{position:absolute;top:-6px;bottom:-6px;width:3px;margin-left:-1.5px;background:var(--rojo);border-radius:2px}
+/* ---------- horarios ---------- */
+.horario{border:1px solid var(--linea);border-radius:10px;overflow:hidden;margin-top:18px}
+.horario .fila{display:flex;justify-content:space-between;gap:10px;padding:11px 15px;border-bottom:1px solid var(--linea);font-size:15px;background:#fff}
+.horario .fila:last-child{border-bottom:0}
+.horario .fila.hoy{background:var(--celeste-3)}
+.horario .fila.hoy b{color:var(--azul)}
+.horario .fila span{text-align:right;color:var(--gris)}
+.estado{display:inline-flex;align-items:center;gap:8px;font-family:var(--tit);font-weight:600;text-transform:uppercase;letter-spacing:.07em;font-size:13.5px;padding:7px 13px;border-radius:6px}
+.estado.abierto{background:#dff6e6;color:#146b38}
+.estado.cerrado{background:#fde7e4;color:#a02f22}
 
-/* ubicación */
-.donde{background:var(--papel);border-top:1px solid var(--linea)}
-.donde .contenedor{display:grid;grid-template-columns:.8fr 1.2fr;gap:34px;align-items:stretch}
-.datos{display:grid;gap:17px;align-content:start}
-.datos .d{border-left:4px solid var(--amarillo);padding-left:14px}
-.datos .d b{display:block;font-family:var(--display);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--celeste-2)}
-.datos .d a{font-weight:600;text-decoration:none;color:var(--grafito)}
-.mapa{border-radius:14px;overflow:hidden;border:3px solid var(--grafito);min-height:380px;background:var(--celeste-claro)}
-.mapa iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
-
-/* cierre */
-.cierre{text-align:center;background:var(--celeste);color:#fff;padding:78px 0;border-top:3px solid var(--grafito)}
-.cierre h2{color:#fff;max-width:800px;margin:0 auto 14px}
-.cierre h2 em{font-style:normal;color:var(--amarillo)}
-.cierre p{color:#dff2f7;margin-bottom:28px;font-size:18px}
-.cierre .botones{justify-content:center}
-.cierre .btn-borde{background:transparent;color:#fff;border-color:#fff}
-.cierre .btn-borde:hover{background:#ffffff1f}
-footer{background:var(--grafito);color:#8d95a3;padding:24px 0 28px;font-size:14px}
-footer .contenedor{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-footer a{color:var(--amarillo);font-weight:600;text-decoration:none}
-
-/* barra fija en el celular */
-.barra{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;grid-template-columns:auto 1fr 1fr;gap:8px;align-items:center;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#f7f7f4f5;backdrop-filter:blur(10px);border-top:3px solid var(--grafito)}
-.barra .btn{padding:13px 6px;font-size:16px;box-shadow:none}
-.barra .mini{display:flex;flex-direction:column;align-items:center;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.1;padding:0 4px;text-decoration:none;color:var(--gris)}
-.barra .mini i{width:11px;height:11px;border-radius:50%;background:var(--gris);margin-bottom:4px}
-.barra .mini.abierto i{background:var(--verde-ok)} .barra .mini.abierto{color:var(--verde-ok)}
-.barra .mini.cerrado i{background:var(--rojo)} .barra .mini.cerrado{color:var(--rojo)}
-
-@media (max-width:900px){
-  .portada{background:linear-gradient(180deg,#0000 0 78%, var(--hueso) 78%),repeating-linear-gradient(90deg,#ffffff0a 0 1px,transparent 1px 34px),repeating-linear-gradient(0deg,#ffffff0a 0 1px,transparent 1px 34px),var(--grafito);padding:32px 0 52px}
-  .portada .contenedor,.busco .contenedor,.horarios .contenedor,.donde .contenedor,.dos .par{grid-template-columns:1fr}
-  .foto-local{width:min(330px,calc(100% - 26px))}
-  .colgante{left:-10px;top:20px}
-  .tira ul{grid-template-columns:1fr 1fr}
-  .tira li:nth-child(2){border-right:0}
-  .tira li:nth-child(-n+2){border-bottom:2px solid #0000001f}
-  .grilla{grid-template-columns:1fr 1fr}
-  section{padding:56px 0}
-  .busco .panel{order:-1}
-  .barra{display:grid}
-  footer{padding-bottom:98px}
-}
-@media (max-width:560px){
-  body{font-size:16px}
-  .cartel .contenedor{height:60px}
-  .marca b{font-size:19px}
-  .cartel-tel span{display:none}
-  .cartel-tel{padding:9px 11px}
-  .grilla{grid-template-columns:1fr}
-  .fila,.escala{grid-template-columns:82px 1fr 98px;gap:10px;padding-left:14px;padding-right:14px}
-  .fila .hs{font-size:13px}
-  .fila .dia{font-size:14px}
-  .fila2,.acciones{grid-template-columns:1fr}
-  .tira li{padding:15px 14px}
-  .tira strong{font-size:20px}
-  .botones .btn{flex:1 1 100%}
-  .panel{padding:18px;box-shadow:5px 5px 0 var(--celeste)}
-  .caja-p{padding:22px 20px}
-}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* ---------- pie ---------- */
+footer{background:var(--azul-noche);color:#b9d4ec;padding:34px 0 104px;font-size:15px}
+footer b{color:#fff}
+footer .fLogo{width:210px;background:#fff;padding:10px 14px;border-radius:6px;margin-bottom:16px}
+.barra{position:fixed;left:0;right:0;bottom:0;display:flex;gap:1px;background:#0b2340;z-index:40}
+.barra a{flex:1;text-align:center;padding:14px 6px;text-decoration:none;font-family:var(--tit);font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:14.5px}
+.barra .b1{background:var(--azul);color:#fff}
+.barra .b2{background:var(--wa);color:#06260f}
+@media(min-width:900px){.barra{display:none}footer{padding-bottom:34px}}
+.frenteFoto img{max-height:400px;object-fit:cover;object-position:center 22%;width:100%}
 </style>
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="rayo" viewBox="0 0 24 24"><path fill="currentColor" d="M13.4 2.6 5.2 13.4h6L9.8 21.4l9.4-11.2h-6.6z"/></symbol>
-  <symbol id="tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
-  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1.1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.3 13.3 0 0 0 5.1 4.5c.7.3 1.3.5 1.7.6a4.2 4.2 0 0 0 1.9.1 3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.6 17.9L0 24l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4 11.8 11.8 0 0 0 8.4-20.2z"/></symbol>
-  <symbol id="pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-7.5-5.2-7.5-12A7.5 7.5 0 0 1 12 2.5 7.5 7.5 0 0 1 19.5 10C19.5 16.8 12 22 12 22z"/><circle cx="12" cy="10" r="2.8"/></g></symbol>
-  <symbol id="cable" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21v-5a5 5 0 0 1 5-5h6a5 5 0 0 0 5-5V3"/><path d="M2 21h4M18 3h4"/></g></symbol>
-  <symbol id="tablero" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 7v4M12 7v4M16 7v4M7 15h10"/></g></symbol>
-  <symbol id="llave" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2.5" width="14" height="19" rx="2.5"/><path d="M9.5 8h5v8h-5z"/></g></symbol>
-  <symbol id="lampara" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 2a6 6 0 0 0-3.5 10.9c.6.5 1 1.3 1 2.1h5c0-.8.4-1.6 1-2.1A6 6 0 0 0 12 2z"/></g></symbol>
-  <symbol id="enchufe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9.5v2M15 9.5v2M8.5 15h7"/></g></symbol>
-  <symbol id="herramienta" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></g></symbol>
-  <symbol id="casco" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15a9 9 0 0 1 18 0"/><path d="M2 15h20v2.5H2zM9 6.5V15M15 6.5V15"/><path d="M9.5 4h5"/></g></symbol>
-  <symbol id="casa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M9.5 21v-6h5v6"/></g></symbol>
-  <symbol id="check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" d="m5 12 5 5 9-10"/></symbol>
-</svg>
-
-<header class="cartel">
-  <div class="contenedor">
-    <a class="marca" href="#" aria-label="FERROSS, inicio">
-      <span class="rayo"><svg><use href="#rayo"/></svg></span>
-      <span><b>FERROSS</b><small>Materiales eléctricos</small></span>
-    </a>
-    <div class="cartel-der">
-      <a class="cartel-tel" href="tel:+541146450498" aria-label="Llamar a FERROSS">
-        <svg><use href="#tel"/></svg><span>4645-0498</span>
-      </a>
+<header>
+  <div class="c">
+    <div class="logoCard"><img src="img/logo.png" alt="FERROSS" width="760" height="127"></div>
+    <h1>Materiales eléctricos<br>sobre Yrigoyen 1064</h1>
+    <p class="baja">Desde el rollo de cable para la obra hasta la térmica que se te quemó anoche. Mostrador, no depósito: entrás y salís con la pieza.</p>
+    <div class="medallon">
+      <b>5,0</b><span><strong style="color:#fff">9 opiniones en Google</strong><br>Todas de 5 estrellas.</span>
+    </div>
+    <div class="acciones">
+      <a class="btn az" href="tel:+541146450498">Llamar al 4645-0498</a>
+      <a class="btn bd" href="#donde">Horarios y cómo llegar</a>
     </div>
   </div>
 </header>
 
-<main>
-  <section class="portada">
-    <div class="contenedor">
-      <div>
-        <div class="estado" id="estado" role="status"><span class="punto"></span><span id="estadoTexto">Lunes a viernes de 8 a 12:30 y de 14 a 18</span></div>
-        <h1>Materiales eléctricos<br><span class="resalta">sobre Yrigoyen,</span><br>en Morón.</h1>
-        <p class="bajada">Del rollo de cable a la llave que se te quemó ayer. <b>Antes de salir, preguntá si lo tenemos</b>
-          y te ahorrás el viaje.</p>
-        <div class="botones">
-          <a class="btn btn-amarillo" href="tel:+541146450498"><svg><use href="#tel"/></svg>Llamar · 4645-0498</a>
-          <a class="btn btn-borde" href="#busco"><svg><use href="#rayo"/></svg>¿Lo tenés?</a>
-        </div>
-      </div>
-
-      <figure class="foto-local">
-        <div class="colgante" aria-hidden="true"><small id="colganteTitulo">Hoy</small><span id="colganteHs">8 a 18</span></div>
-        <div class="marco">
-          <img src="img/fachada.jpg" alt="Frente de FERROSS en Av. Hipólito Yrigoyen 1064, Morón: cartel blanco de materiales eléctricos sobre el frente celeste" width="975" height="1300" fetchpriority="high">
-          <figcaption><b>Buscá el frente celeste</b> y el cartel de Materiales Eléctricos.</figcaption>
-        </div>
-      </figure>
+<div class="aviso">
+  <div class="c">
+    <div>
+      <b>Ojo con el mediodía:</b> cerramos de 12:30 a 14. Antes de venir de lejos, fijate el horario del día
+      <a href="#donde" style="color:#7fd0ff">acá abajo</a> — la web te dice si estamos abiertos ahora.
     </div>
-  </section>
-
-  <div class="tira">
-    <ul class="contenedor">
-      <li><a href="https://www.google.com/maps/search/?api=1&query=FERROSS+Av.+Hip%C3%B3lito+Yrigoyen+1064+Mor%C3%B3n" target="_blank" rel="noopener"><strong>5,0 ★</strong><span>en Google, sin una sola queja</span></a></li>
-      <li><strong>8 a 18</strong><span>de lunes a viernes</span></li>
-      <li><strong>Sábados</strong><span>de 8 a 13</span></li>
-      <li><strong>Yrigoyen 1064</strong><span>Morón · Zona Oeste</span></li>
-    </ul>
   </div>
+</div>
 
-  <section class="busco" id="busco">
-    <div class="contenedor">
-      <div>
-        <div class="etiqueta">Antes de venir</div>
-        <h2>¿Lo tenés?</h2>
-        <p class="lead">Escribí qué necesitás. Te armamos la consulta lista para preguntarnos por teléfono
-          o mandárnosla por WhatsApp.</p>
-        <ul class="consejos">
-          <li><b class="n">1</b><span><strong>Decí qué es,</strong> aunque no sepas el nombre técnico: "la llave que salta" sirve.</span></li>
-          <li><b class="n">2</b><span><strong>Sumá la medida o el amperaje</strong> si lo tenés a mano: 2,5 mm², 25 A, 3 módulos.</span></li>
-          <li><b class="n">3</b><span><strong>¿Es una pieza que sacaste?</strong> Sacale una foto y mandala junto al mensaje.</span></li>
+<section>
+  <div class="c">
+    <p class="ojo" style="color:var(--gris-2)">Lo que tenemos</p>
+    <h2>Todo esto está en el cartel</h2>
+    <p style="margin-top:10px;max-width:36em;color:var(--gris)">No es una lista de catálogo: son los productos que el local muestra en su propia vidriera y en el cartel de la vereda.</p>
+    <ul class="rubros">
+      <li><b>Cables y rollos</b><span>Unipolar, taller, subterráneo. Por metro o por rollo.</span></li>
+      <li><b>Térmicas y disyuntores</b><span>Uni, bi y tetrapolares. Para tablero de casa o de obra.</span></li>
+      <li><b>Iluminación LED</b><span>Lámparas, tubos y reflectores para patio y galpón.</span></li>
+      <li><b>Llaves y tomacorrientes</b><span>Módulos, tapas y bastidores.</span></li>
+      <li><b>Fichas y prolongadores</b><span>Industriales, zapatillas y alargues armados.</span></li>
+      <li><b>Cinta y accesorios</b><span>Cinta aisladora, precintos, borneras, terminales.</span></li>
+    </ul>
+    <figure class="cartel">
+      <img src="img/cartel.jpg" alt="Cartel celeste del local: MATERIALES ELECTRICOS FERROSS, con fotos de cables, reflectores, lámparas y llaves térmicas." width="1150" height="390">
+      <figcaption>El cartel del local, sobre Av. Hipólito Yrigoyen. Los productos que ves ahí son los que hay adentro.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="rayas"></div>
+
+<section style="background:var(--celeste-3)">
+  <div class="c">
+    <p class="ojo" style="color:var(--gris-2)">A quién atendemos</p>
+    <h2>Al matriculado y al vecino, en el mismo mostrador</h2>
+    <div class="dos">
+      <div class="caja azul">
+        <h3>Si trabajás del rubro</h3>
+        <p>Vení con la lista como la tengas. Papel, foto o de memoria.</p>
+        <ul>
+          <li>Cable por metro o por rollo entero.</li>
+          <li>Si falta algo, te decimos cuándo lo tenemos.</li>
+          <li>Se atiende a la mañana temprano, antes de que arranques la obra.</li>
         </ul>
       </div>
-      <form class="panel" id="armador" autocomplete="off">
-        <label>¿Qué necesitás?
-          <input id="fQue" placeholder="Ej: cable unipolar" maxlength="120">
-        </label>
-        <div class="rapidos" aria-label="Ejemplos">
-          <button type="button" data-q="Cable unipolar">Cable</button>
-          <button type="button" data-q="Térmica">Térmica</button>
-          <button type="button" data-q="Disyuntor">Disyuntor</button>
-          <button type="button" data-q="Tomacorriente">Toma</button>
-          <button type="button" data-q="Lámpara LED">LED</button>
-          <button type="button" data-q="Caño corrugado">Caño</button>
-        </div>
-        <div class="fila2">
-          <label><span>Medida o modelo <span class="opc">(opcional)</span></span>
-            <input id="fMedida" placeholder="Ej: 2,5 mm&sup2; / 25 A / 3 módulos" maxlength="60">
-          </label>
-          <label><span>Cantidad <span class="opc">(opcional)</span></span>
-            <input id="fCant" placeholder="Ej: 50 m" maxlength="20">
-          </label>
-        </div>
-        <div class="ticket" aria-live="polite"><small>Tu consulta</small><p id="vista">Hola! ¿Tienen…?</p></div>
-        <div class="acciones">
-          <a class="btn btn-amarillo" href="tel:+541146450498"><svg><use href="#tel"/></svg>Llamar</a>
-          <button class="btn btn-wa" type="submit"><svg><use href="#wa"/></svg>WhatsApp</button>
-        </div>
-        <button class="copiar" type="button" id="copiar">Copiar el texto</button>
-        <p class="nota">Si nos llamás, tené este texto a mano. No guardamos nada de lo que escribís.</p>
-      </form>
+      <div class="caja">
+        <h3>Si es para tu casa</h3>
+        <p>No hace falta que sepas cómo se llama la pieza.</p>
+        <ul>
+          <li>Traé la pieza vieja o una foto y la sacamos igual.</li>
+          <li>Te explicamos qué llevar y qué no te hace falta.</li>
+          <li>Si el arreglo es para un electricista, te lo decimos.</li>
+        </ul>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="rubros">
-    <div class="contenedor">
-      <div class="rubros-head">
-        <div><div class="etiqueta">Consultanos por</div><h2>Todo lo que lleva corriente</h2></div>
-        <p>Tocá un rubro y te armamos la consulta. Si no lo ves acá, preguntá igual: es probable que lo tengamos.</p>
-      </div>
-      <div class="grilla">
-        <button class="rubro" data-rubro="Cables"><span class="ic"><svg><use href="#cable"/></svg></span><span><h3>Cables</h3><span>Unipolar, taller, subterráneo.</span></span></button>
-        <button class="rubro" data-rubro="Tableros y protecciones"><span class="ic"><svg><use href="#tablero"/></svg></span><span><h3>Tableros</h3><span>Térmicas, disyuntores, gabinetes.</span></span></button>
-        <button class="rubro" data-rubro="Llaves y tomas"><span class="ic"><svg><use href="#llave"/></svg></span><span><h3>Llaves y tomas</h3><span>Módulos, bastidores, tapas.</span></span></button>
-        <button class="rubro" data-rubro="Iluminación"><span class="ic"><svg><use href="#lampara"/></svg></span><span><h3>Iluminación</h3><span>Lámparas LED, plafones, reflectores.</span></span></button>
-        <button class="rubro" data-rubro="Caños y canalización"><span class="ic"><svg><use href="#enchufe"/></svg></span><span><h3>Caños y cajas</h3><span>Corrugado, canaleta, cajas de embutir.</span></span></button>
-        <button class="rubro" data-rubro="Accesorios y herramientas"><span class="ic"><svg><use href="#herramienta"/></svg></span><span><h3>Accesorios</h3><span>Fichas, terminales, cinta, prolongadores.</span></span></button>
-      </div>
+<section>
+  <div class="c">
+    <p class="ojo" style="color:var(--gris-2)">9 opiniones, 5,0 de promedio</p>
+    <h2>Lo que más repiten es la atención</h2>
+    <div class="ops">
+      <div class="op"><div class="est">★★★★★</div><p>“Excelente atención y buenos precios, osvaldo un amigazo.”</p><p class="q">Gabriel Odierna · Google</p></div>
+      <div class="op"><div class="est">★★★★★</div><p>“Siempre excelente atención y asesoramiento de Osvaldo.”</p><p class="q">Fernando Checo · Google</p></div>
+      <div class="op"><div class="est">★★★★★</div><p>“Tiene todo, muy buena atención y precios.”</p><p class="q">Eros Nobile · Google</p></div>
     </div>
-  </section>
+    <p style="margin-top:16px;font-size:15px;color:var(--gris)">Son opiniones públicas de la ficha de Google del local, copiadas tal cual.</p>
 
-  <section class="dos">
-    <div class="contenedor">
-      <div class="etiqueta">Para los dos lados del mostrador</div>
-      <h2>Te atendemos igual<br>si sos matriculado o si es tu casa</h2>
-      <div class="par">
-        <article class="caja-p pro">
-          <h3><svg style="display:inline-block;width:22px;height:22px;vertical-align:-3px;color:var(--amarillo)"><use href="#casco"/></svg> Sos electricista</h3>
-          <p>Sabés lo que buscás y no querés perder media mañana. Llamá, pedilo y pasá.</p>
-          <ul>
-            <li>Te decimos por teléfono si está y cuánto sale</li>
-            <li>Abrimos a las 8, antes de que arranques la obra</li>
-            <li>Si falta algo, te avisamos cuándo entra</li>
-          </ul>
-          <a class="btn btn-amarillo" href="tel:+541146450498"><svg><use href="#tel"/></svg>Llamar y encargar</a>
-        </article>
-        <article class="caja-p">
-          <h3><svg style="display:inline-block;width:22px;height:22px;vertical-align:-3px;color:var(--amarillo)"><use href="#casa"/></svg> Es para tu casa</h3>
-          <p>No sabés cómo se llama, pero sabés qué pasa. Contanos el problema y lo resolvemos.</p>
-          <ul>
-            <li>Te explicamos qué necesitás y por qué</li>
-            <li>Traé la pieza vieja o una foto y la comparamos</li>
-            <li>Si es un trabajo para un matriculado, te lo decimos</li>
-          </ul>
-          <a class="btn btn-borde" href="#busco"><svg><use href="#rayo"/></svg>Contanos qué pasa</a>
-        </article>
-      </div>
-      <p class="firma"><svg style="width:20px;height:20px;color:var(--amarillo)"><use href="#check"/></svg>
-        <span>En Google nos ponen <b>5,0</b> y lo que más repiten es la atención de <b>Osvaldo</b>.</span></p>
+    <h3 style="margin-top:34px;font-size:21px;color:var(--azul)">Cómo se paga</h3>
+    <div class="pagos">
+      <span>Efectivo</span><span>Débito</span><span>Crédito</span><span>Visa</span><span>Mastercard</span><span>Cabal</span><span>Argencard</span>
     </div>
-  </section>
+    <p style="margin-top:10px;font-size:14px;color:var(--gris)">Los logos están pegados en la vidriera del local.</p>
+  </div>
+</section>
 
-  <section class="horarios" id="horarios">
-    <div class="contenedor">
-      <div>
-        <div class="etiqueta">Horarios</div>
-        <h2>Abrimos temprano<br>y cortamos al mediodía</h2>
-        <p class="lead">De 8 a 12:30 y de 14 a 18, de lunes a viernes. Los sábados, de corrido hasta la una.</p>
-        <div class="aviso"><b>Un consejo:</b> si venís cerca del cierre del mediodía, llamá antes. Así te confirmamos que llegás.</div>
-      </div>
-      <div class="tabla" id="tabla" aria-label="Horario de la semana">
-        <div class="escala" aria-hidden="true"><span></span><div><span>7</span><span>9</span><span>11</span><span>13</span><span>15</span><span>17</span><span>19</span></div><span></span></div>
-      </div>
-    </div>
-  </section>
+<div class="rayas osc"></div>
 
-  <section class="donde" id="donde">
-    <div class="contenedor">
-      <div class="datos">
-        <div>
-          <div class="etiqueta">Dónde estamos</div>
-          <h2>Yrigoyen 1064, Morón</h2>
-        </div>
-        <div class="d"><b>Dirección</b>Av. Hipólito Yrigoyen 1064, B1708 Morón · Zona Oeste GBA</div>
-        <div class="d"><b>Teléfono</b><a href="tel:+541146450498">011 4645-0498</a></div>
-        <div class="d"><b>Horario</b>Lunes a viernes de 8 a 12:30 y de 14 a 18<br>Sábados de 8 a 13</div>
-        <div class="d"><b>Cómo reconocerlo</b>Frente celeste con el cartel blanco de Materiales Eléctricos.</div>
-        <div class="botones">
-          <a class="btn btn-borde" href="https://www.google.com/maps/search/?api=1&query=FERROSS+Av.+Hip%C3%B3lito+Yrigoyen+1064+Mor%C3%B3n" target="_blank" rel="noopener"><svg><use href="#pin"/></svg>Cómo llegar</a>
-        </div>
-      </div>
-      <div class="mapa">
-        <iframe title="Mapa: Av. Hipólito Yrigoyen 1064, Morón" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=FERROSS,+Av.+Hip%C3%B3lito+Yrigoyen+1064,+Mor%C3%B3n,+Buenos+Aires&output=embed"></iframe>
-      </div>
+<section id="donde" style="background:var(--azul-noche);color:#e2f1fe">
+  <div class="c">
+    <p class="ojo">Dónde estamos</p>
+    <h2 style="color:#fff">Av. Hipólito Yrigoyen 1064, Morón</h2>
+    <p style="margin-top:12px" id="estadoBox"></p>
+    <div class="horario" id="horario" style="background:#fff"></div>
+    <p style="margin-top:16px;font-size:15px;color:#a9c9e4">Entre Aceros Jorge y Poliplac, vereda de los números pares. El frente es azul, el cartel es celeste.</p>
+    <div class="acciones" style="margin-top:18px">
+      <a class="btn az" style="background:var(--celeste);color:#08243f" href="https://www.google.com/maps/search/?api=1&query=FERROSS+Av.+Hip%C3%B3lito+Yrigoyen+1064+Mor%C3%B3n" target="_blank" rel="noopener">Cómo llegar</a>
+      <a class="btn bd" href="tel:+541146450498">Llamar al 4645-0498</a>
     </div>
-  </section>
-
-  <section class="cierre">
-    <div class="contenedor">
-      <h2>¿Saltó la térmica <em>y no sabés cuál era?</em></h2>
-      <p>Llamanos, contanos qué pasó y te decimos qué necesitás.</p>
-      <div class="botones">
-        <a class="btn btn-amarillo" href="tel:+541146450498"><svg><use href="#tel"/></svg>Llamar · 4645-0498</a>
-        <a class="btn btn-borde" href="#busco">Armar mi consulta</a>
-      </div>
-    </div>
-  </section>
-</main>
+    <figure class="frenteFoto" style="margin-top:20px;border-radius:10px;overflow:hidden;max-width:520px">
+      <img src="img/frente.jpg" alt="Frente del local FERROSS: cartel celeste y fachada azul sobre Av. Hipólito Yrigoyen." width="900" height="1215">
+    </figure>
+  </div>
+</section>
 
 <footer>
-  <div class="contenedor">
-    <span>FERROSS · Materiales eléctricos · Av. Hipólito Yrigoyen 1064, Morón</span>
-    <span>Teléfono <a href="tel:+541146450498">011 4645-0498</a></span>
+  <div class="c">
+    <img class="fLogo" src="img/logo.png" alt="FERROSS">
+    <p><b>FERROSS</b> · Materiales eléctricos<br>
+    Av. Hipólito Yrigoyen 1064, B1708DLX Morón, Buenos Aires<br>
+    Teléfono: <b>011 4645-0498</b></p>
+    <p style="margin-top:14px;font-size:13.5px">Lunes a viernes de 8 a 12:30 y de 14 a 18. Sábados de 8 a 13. Domingos cerrado.</p>
   </div>
 </footer>
 
-<div class="barra">
-  <a class="mini" id="barraEstado" href="#horarios"><i></i><span>Horario</span></a>
-  <a class="btn btn-amarillo" href="tel:+541146450498">Llamar</a>
-  <a class="btn btn-borde" href="#busco">¿Lo tenés?</a>
-</div>
+<nav class="barra">
+  <a class="b1" href="tel:+541146450498">Llamar</a>
+  <a class="b2" href="https://wa.me/541146450498?text=Hola!%20Te%20escribo%20desde%20la%20web%20de%20FERROSS.%20Necesito%20un%20material%20el%C3%A9ctrico." target="_blank" rel="noopener">WhatsApp</a>
+</nav>
 
 <script>
-(function () {
-  var WA = '5491146450498'; /* del fijo del local: confirmar si tiene WhatsApp (ver dudas) */
+// Horario real de la ficha de Google (relevado 24/09/2026):
+// lunes a viernes 8:00-12:30 y 14:00-18:00 · sábado 8:00-13:00 · domingo cerrado.
+var H = [ null,
+  [[480,750],[840,1080]], [[480,750],[840,1080]], [[480,750],[840,1080]],
+  [[480,750],[840,1080]], [[480,750],[840,1080]], [[480,780]] ];
+var NOM = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
 
-  /* ---------- Horario, en hora de Argentina ---------- */
-  /* Minutos desde las 00:00. Lunes a viernes 8-12:30 y 14-18. Sábado 8-13. Domingo cerrado. */
-  var SEMANA = {
-    1: [[480, 750], [840, 1080]], 2: [[480, 750], [840, 1080]], 3: [[480, 750], [840, 1080]],
-    4: [[480, 750], [840, 1080]], 5: [[480, 750], [840, 1080]], 6: [[480, 780]], 0: null
-  };
-  var NOMBRES = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
-  var ESC0 = 420, ESC1 = 1140; /* de 7 a 19 */
+function hhmm(m){ var h=Math.floor(m/60), x=m%60; return h + (x ? ':'+String(x).padStart(2,'0') : ''); }
+function txt(r){ return r ? r.map(function(t){ return hhmm(t[0])+' a '+hhmm(t[1]); }).join(' · ') : 'Cerrado'; }
 
-  function ahoraAR() {
-    var p = {};
-    new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Argentina/Buenos_Aires', weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' })
-      .formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
-    var map = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
-    return { dia: map[p.weekday], min: (+p.hour % 24) * 60 + (+p.minute) };
-  }
-  function hs(m) { var h = Math.floor(m / 60), mm = m % 60; return h + (mm ? ':' + (mm < 10 ? '0' : '') + mm : ''); }
-  function texto(t) { return t ? t.map(function (r) { return hs(r[0]) + ' a ' + hs(r[1]); }).join(' · ') : 'Cerrado'; }
-
-  var a = ahoraAR(), hoy = SEMANA[a.dia], tramo = null;
-  if (hoy) { for (var i = 0; i < hoy.length; i++) { if (a.min >= hoy[i][0] && a.min < hoy[i][1]) { tramo = hoy[i]; break; } } }
-
-  var msg, corto;
-  if (tramo) {
-    var faltan = tramo[1] - a.min;
-    msg = '<b>Abierto ahora</b> · ' + (faltan <= 45 ? 'cerramos en ' + faltan + ' min' : 'hasta las ' + hs(tramo[1]));
-    corto = 'Abierto';
-  } else {
-    var prox = null, cual = '';
-    if (hoy) { for (var j = 0; j < hoy.length; j++) { if (a.min < hoy[j][0]) { prox = hoy[j]; cual = 'hoy'; break; } } }
-    if (!prox) {
-      for (var k = 1; k <= 7; k++) {
-        var d = (a.dia + k) % 7, t = SEMANA[d];
-        if (t) { prox = t[0]; cual = k === 1 ? 'mañana' : 'el ' + NOMBRES[d].toLowerCase(); break; }
-      }
-    }
-    msg = '<b>Cerrado</b>' + (prox ? ' · abrimos ' + cual + ' a las ' + hs(prox[0]) : '');
-    corto = 'Cerrado';
-  }
-
-  var est = document.getElementById('estado');
-  est.classList.add(tramo ? 'abierto' : 'cerrado');
-  document.getElementById('estadoTexto').innerHTML = msg;
-  var be = document.getElementById('barraEstado');
-  be.classList.add(tramo ? 'abierto' : 'cerrado');
-  be.querySelector('span').textContent = corto;
-  document.getElementById('colganteTitulo').textContent = 'Hoy ' + NOMBRES[a.dia].toLowerCase();
-  document.getElementById('colganteHs').textContent = hoy ? texto(hoy) : 'Cerrado';
-
-  /* ---------- Tabla de la semana ---------- */
-  var tabla = document.getElementById('tabla');
-  [1, 2, 3, 4, 5, 6, 0].forEach(function (d) {
-    var t = SEMANA[d], esHoy = d === a.dia;
-    var div = document.createElement('div');
-    div.className = 'fila' + (esHoy ? ' hoy' : '') + (t ? '' : ' cerrado-dia');
-    var barras = '';
-    if (t) {
-      t.forEach(function (r) {
-        var izq = (r[0] - ESC0) / (ESC1 - ESC0) * 100, anc = (r[1] - r[0]) / (ESC1 - ESC0) * 100;
-        barras += '<i style="left:' + izq + '%;width:' + anc + '%"></i>';
-      });
-    }
-    if (esHoy && a.min >= ESC0 && a.min <= ESC1) {
-      barras += '<b class="ahora" title="Ahora" style="left:' + ((a.min - ESC0) / (ESC1 - ESC0) * 100) + '%"></b>';
-    }
-    div.innerHTML = '<span class="dia">' + NOMBRES[d] + '</span><div class="pista">' + barras + '</div><span class="hs">' + texto(t) + '</span>';
-    tabla.appendChild(div);
-  });
-
-  /* ---------- ¿Lo tenés? ---------- */
-  var fQue = document.getElementById('fQue'), fMed = document.getElementById('fMedida'), fCant = document.getElementById('fCant');
-  var vista = document.getElementById('vista');
-  function mensaje() {
-    var q = fQue.value.trim(), m = fMed.value.trim(), c = fCant.value.trim();
-    var s = 'Hola FERROSS! Te escribo desde la web. ';
-    s += q ? '¿Tienen ' + q + '?' : '¿Tienen…?';
-    if (m) s += ' Medida/modelo: ' + m + '.';
-    if (c) s += ' Cantidad: ' + c + '.';
-    return s + ' Gracias!';
-  }
-  function refrescar() { vista.textContent = mensaje(); }
-  [fQue, fMed, fCant].forEach(function (el) { el.addEventListener('input', refrescar); });
-  document.querySelectorAll('.rapidos button').forEach(function (b) {
-    b.addEventListener('click', function () { fQue.value = b.dataset.q; refrescar(); fMed.focus(); });
-  });
-  document.querySelectorAll('.rubro').forEach(function (b) {
-    b.addEventListener('click', function () {
-      fQue.value = b.dataset.rubro + ': ';
-      refrescar();
-      document.getElementById('busco').scrollIntoView({ behavior: 'smooth' });
-      setTimeout(function () { fQue.focus({ preventScroll: true }); fQue.setSelectionRange(fQue.value.length, fQue.value.length); }, 520);
-    });
-  });
-  document.getElementById('armador').addEventListener('submit', function (e) {
-    e.preventDefault();
-    if (!fQue.value.trim()) { fQue.focus(); fQue.placeholder = 'Contanos qué necesitás'; return; }
-    window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(mensaje()), '_blank');
-  });
-  document.getElementById('copiar').addEventListener('click', function () {
-    var b = this, txt = mensaje();
-    var ok = function () { b.textContent = '¡Copiado!'; setTimeout(function () { b.textContent = 'Copiar el texto'; }, 1800); };
-    if (navigator.clipboard) navigator.clipboard.writeText(txt).then(ok, ok); else ok();
-  });
-  refrescar();
+(function(){
+  var f = new Date(new Date().toLocaleString('en-US',{timeZone:'America/Argentina/Buenos_Aires'}));
+  var d = f.getDay(), min = f.getHours()*60 + f.getMinutes(), r = H[d];
+  var abierto = !!r && r.some(function(t){ return min >= t[0] && min < t[1]; });
+  document.getElementById('estadoBox').innerHTML =
+    '<span class="estado '+(abierto?'abierto':'cerrado')+'">'+(abierto?'Abierto ahora':'Cerrado ahora')+'</span>';
+  var html = '';
+  for (var i=1;i<=7;i++){ var k=i%7; html += '<div class="fila'+(k===d?' hoy':'')+'"><b>'+NOM[k]+'</b><span>'+txt(H[k])+'</span></div>'; }
+  document.getElementById('horario').innerHTML = html;
 })();
 </script>
 </body>
